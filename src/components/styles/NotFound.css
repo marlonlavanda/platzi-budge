@@ -1,0 +1,18 @@
+.NotFound__background {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 0;
+  background: url("../../images/stars.svg"), #1b1b25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.NotFound__img {
+  width: 800px;
+  height: 800px;
+  /* padding: 2rem 0;
+  background: url("../../images/stars.svg"), #1b1b25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+  color: #ffffff; */
+}
