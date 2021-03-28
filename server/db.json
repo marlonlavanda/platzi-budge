@@ -442,24 +442,16 @@
       "id": "npaYZKI"
     },
     {
-      "name": "Jordan",
-      "surname": "Lavanda",
-      "jobTitle": "Peluquero",
-      "email": "jordanlavanda@gmail.com",
-      "twitter": "@jordan25",
-      "id": "QT3xHdg"
-    },
-    {
-      "name": "Jordan",
-      "surname": "Lavanda",
+      "firstName": "Jordan",
+      "lastName": "Lavanda",
       "jobTitle": "Peluquero",
       "email": "jordanlavanda@gmail.com",
       "twitter": "jordan25",
       "id": "GNLzGLg"
     },
     {
-      "name": "Andrea",
-      "surname": "Lavanda",
+      "firstName": "Andrea",
+      "lastName": "Lavanda",
       "jobTitle": "Psicologa",
       "email": "andreak25lavanda@gmail.com",
       "twitter": "teMiroyTeAnalizo",
@@ -467,8 +459,8 @@
       "id": "qFR4_R9"
     },
     {
-      "name": "Marlon",
-      "surname": "Lavanda",
+      "firstName": "Marlon",
+      "lastName": "Lavanda",
       "jobTitle": "Product Designer and Frontend Engineer",
       "email": "jr4057983@gmail.com",
       "twitter": "lavanda-marlon",
@@ -476,8 +468,8 @@
       "id": "8poZKzC"
     },
     {
-      "name": "Fanny",
-      "surname": "Romero",
+      "firstName": "Fanny",
+      "lastName": "Romero",
       "jobTitle": "Teacher",
       "email": "lapatrona@gmail.com",
       "twitter": "funny-fanny",

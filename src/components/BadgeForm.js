@@ -18,7 +18,7 @@ class BadgeForm extends React.Component {
             className="form-control" 
             type="text" 
             value={this.props.formValues.firstName}
-            name="name"/>
+            name="firstName"/>
           </div>
           <div className="form-group">
             <label>Surname</label>
@@ -27,7 +27,7 @@ class BadgeForm extends React.Component {
             className="form-control" 
             type="text" 
             value={this.props.formValues.lastName}
-            name="surname"/>
+            name="lastName"/>
           </div>
           <div className="form-group">
             <label>Email</label>

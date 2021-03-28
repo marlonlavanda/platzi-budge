@@ -75,8 +75,8 @@ class BadgeEdit extends React.Component {
           <div className="row">
             <div className="col-6">
             <Badge 
-            name={this.state.form.firstName || 'FIRST_NAME'} 
-            surname={this.state.form.lastName || 'SURNAME'} 
+            firstName={this.state.form.firstName || 'FIRST_NAME'} 
+            lastName={this.state.form.lastName || 'SURNAME'} 
             avatarUrl="http://en.gravatar.com/avatar/c2e89682cdbe199e743d970ef00b5b78?id=identicon"
             jobTitle={this.state.form.jobTitle || 'JOB_TITLE'} 
             twitter={this.state.form.twitter || 'twitter'} 
