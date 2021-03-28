@@ -32,9 +32,9 @@
       "firstName": "Tatyana",
       "lastName": "Von",
       "email": "Herminio.Schmeler@hotmail.com",
-      "jobTitle": "Central Branding Representative",
+      "jobTitle": "Branding Designer",
       "twitter": "TatyanaVon35871-3686",
-      "avatarUrl": "https://www.gravatar.com/avatar/98c382edd93414c1649b9db866000f97?d=identicon"
+      "avatarUrl": "https://gravatar.com/avatar/98c382edd93414c1649b9db866000f97?d=identicon"
     },
     {
       "id": "1921a734-cc05-4f71-a677-ffe38dda6958",
@@ -440,6 +440,49 @@
       "jobTitle": "Lawyer",
       "twitter": "ckaufmanpr",
       "id": "npaYZKI"
+    },
+    {
+      "name": "Jordan",
+      "surname": "Lavanda",
+      "jobTitle": "Peluquero",
+      "email": "jordanlavanda@gmail.com",
+      "twitter": "@jordan25",
+      "id": "QT3xHdg"
+    },
+    {
+      "name": "Jordan",
+      "surname": "Lavanda",
+      "jobTitle": "Peluquero",
+      "email": "jordanlavanda@gmail.com",
+      "twitter": "jordan25",
+      "id": "GNLzGLg"
+    },
+    {
+      "name": "Andrea",
+      "surname": "Lavanda",
+      "jobTitle": "Psicologa",
+      "email": "andreak25lavanda@gmail.com",
+      "twitter": "teMiroyTeAnalizo",
+      "avatarUrl": "https://gravatar.com/avatar/f6718ff0578ff5285550609d051ef888?d=identicon",
+      "id": "qFR4_R9"
+    },
+    {
+      "name": "Marlon",
+      "surname": "Lavanda",
+      "jobTitle": "Product Designer and Frontend Engineer",
+      "email": "jr4057983@gmail.com",
+      "twitter": "lavanda-marlon",
+      "avatarUrl": "https://gravatar.com/avatar/c2e89682cdbe199e743d970ef00b5b78?d=identicon",
+      "id": "8poZKzC"
+    },
+    {
+      "name": "Fanny",
+      "surname": "Romero",
+      "jobTitle": "Teacher",
+      "email": "lapatrona@gmail.com",
+      "twitter": "funny-fanny",
+      "avatarUrl": "https://gravatar.com/avatar/facb89b439162a2eaa19cc9e2c5453bc?d=identicon",
+      "id": "fwVMSEx"
     }
   ]
 }

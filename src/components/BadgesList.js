@@ -1,7 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './styles/BadgesList.css'
+import Gravatar from './Gravatar'
 
+class BadgesListItem extends React.Component {
+  render(){
+    return(
+      <div className="BadgesListItem">
+        <Gravatar
+              className="BadgesListItem__avatar"
+              email={this.props.badge.email}
+            />
+            <div>
+              <strong>
+                {this.props.badge.firstName} {this.props.badge.lastName}
+              </strong>
+              <br />@{this.props.badge.twitter}
+              <br />
+              {this.props.badge.jobTitle}
+            </div>
+      </div>
+    )
+  }
+}
 class BadgesList extends React.Component{
   render(){
     if(this.props.badges.length === 0){
@@ -13,22 +34,22 @@ class BadgesList extends React.Component{
       )
     }
     return(
-      <ul className="list-unstyled BadgesList">
-                {this.props.badges.map((badge) => {
-                  return(
-                    <li key={badge.id} className="BadgesListItem">
-                      <img src={badge.avatarUrl} alt="" className="BadgesListItem__avatar"/>
-                      <div>
-                        <div><strong>{badge.name} {badge.surname}</strong></div>
-                        <div>
-                          <span className="Twitter__logo"></span> @{badge.twitter}
-                        </div>
-                        <div>{badge.jobTitle}</div>
-                      </div>
-                    </li>
-                  )
-                })}
+      <div className="BadgesList">
+        <ul className="list-unstyled">
+          {this.props.badges.map(badge => {
+            return (
+              <li key={badge.id}>
+                <Link
+                  className="text-reset text-decoration-none"
+                  to={`/badges/${badge.id}/edit`}
+                >
+                  <BadgesListItem badge={badge} />
+                </Link>
+              </li>
+            );
+          })}
         </ul>
+      </div>
     )
   }
 }
