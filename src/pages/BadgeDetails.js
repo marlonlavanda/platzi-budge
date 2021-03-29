@@ -5,7 +5,18 @@ import confLogo from '../images/platziconf-logo.svg'
 import '../components/styles/BadgeDetails.css'
 import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
+
+  // Manejo del estado con Hooks 
+  function useIncreaseCount(max){
+    const [count, setCount] = React.useState(0)
+    if(count > max) {
+      setCount(0)
+    }
+    return [count, setCount]
+  }
 function BadgeDetails (props) {
+  const [count, setCount] = useIncreaseCount(4)
+  // const count = 3
   const badge = props.badge
 
   return (
@@ -36,6 +47,11 @@ function BadgeDetails (props) {
               <div className="col">
                 <h2>Actions</h2>
                   <div>
+                    <button onClick={() => {
+                      setCount(count + 1)
+                    }} className="btn btn-primary mr-4">
+                      Increase Count: {count}
+                    </button>
                     <Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>Edit</Link>
                     </div>
                   <div>

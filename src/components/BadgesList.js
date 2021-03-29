@@ -23,11 +23,45 @@ class BadgesListItem extends React.Component {
     )
   }
 }
-class BadgesList extends React.Component{
-  render(){
-    if(this.props.badges.length === 0){
+
+function useSearchBadges(badges) {
+
+  const [ query, setQuery ] = React.useState('')
+  const [ filteredBadges, setFilteredBadges ] = React.useState(badges)
+  // Uso de Hooks con memo 
+  React.useMemo(() => {
+    const result = badges.filter(badge => {
+    return `${badge.firstName} ${badge.lastName}`
+    .toLowerCase()
+    .includes(query
+     .toLowerCase())
+  })
+  setFilteredBadges(result)
+  }, [badges, query])
+
+  return { query, setQuery, filteredBadges}
+}
+
+function BadgesList (props){
+    const badges = props.badges
+    const { query, setQuery, filteredBadges } = useSearchBadges(badges)
+    // const filteredBadges = badges.filter(badge => {
+    //   return `${badge.firstName} ${badge.lastName}`.toLowerCase().includes(query.toLowerCase())
+    // })
+
+
+    if(filteredBadges.length === 0){
       return(
         <div>
+          <div className="form-group">
+          <label>Filter Badges</label>
+          <input type="text" className="form-control"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value)
+            }}
+          />
+        </div>
           <h3>No badges were found</h3>
           <Link className="btn btn-primary" to="/badges/new"> Create new Badge</Link>
         </div>
@@ -35,8 +69,17 @@ class BadgesList extends React.Component{
     }
     return(
       <div className="BadgesList">
+        <div className="form-group">
+          <label>Filter Badges</label>
+          <input type="text" className="form-control"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value)
+            }}
+          />
+        </div>
         <ul className="list-unstyled">
-          {this.props.badges.map(badge => {
+          {filteredBadges.map(badge => {
             return (
               <li key={badge.id}>
                 <Link
@@ -51,7 +94,6 @@ class BadgesList extends React.Component{
         </ul>
       </div>
     )
-  }
 }
 
 export default BadgesList
